@@ -1,0 +1,20 @@
+Chapter 5 - Challenge Solution
+
+This challenge simply asks you to grab the contents of a file in GitHub and copy it into your global **.gitignore** with the following steps:
+
+1. Navigate to [https://github.com/github/gitignore/tree/master/Global](https://github.com/github/gitignore/tree/master/Global).
+2. Find the correct **.gitignore** for your own operating system.
+3. Take the contents of that OS-specific **.gitignore**, and add it to your own global **.gitignore**.
+
+Here are the steps I followed to complete this challenge. You may have used slightly different methods to accomplish the same result, but here’s how I did it:
+
+- Navigate to [https://github.com/github/gitignore/tree/master/Global](https://github.com/github/gitignore/tree/master/Global) in a browser.
+- Click on the appropriate global .gitignore file for your operating system. I’m on a Mac, so I’ll use the macOS.gitignore file.
+- Copy the contents of this file and press Command + C (Control + C on a Windows machine) to copy it to your clipboard
+- Return to your terminal program and edit the ".gitignore_global" file you created in the chapter.
+- Paste the contents of the file into "gitignore_global" and save your changes.
+
+That’s it! Now, Git won’t track any of these files in any new repositories that you create on your local system.
+
+---
+end of file

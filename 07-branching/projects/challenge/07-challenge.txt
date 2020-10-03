@@ -1,0 +1,61 @@
+Chapter 7 - Challenge Solution
+
+1. Create a temporary branch with the name of **newBranch**.
+
+
+git branch newBranch
+
+
+
+2. Switch to that branch.
+
+git checkout newBranch
+
+
+
+3. Use the `touch` command to create an empty **README.md** file in the root directory of your project.
+
+
+touch README.md
+
+
+4. Add that new **README.md** file to the staging area.
+
+
+git add README.md
+
+
+5. Commit that change with an appropriate message.
+
+
+git commit -m "Adding README.md"
+
+
+6. Checkout the **master** branch.
+
+
+git checkout master
+
+
+7. Delete **newBranch** — but Git won’t let you delete this branch in its current state. Why?
+
+First, try the following:
+
+
+git branch -d newBranch
+
+
+Git responds with:
+
+
+error: The branch 'newBranch' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D newBranch'.
+
+
+8. Follow the suggestion that Git gives you to see if you can delete this branch.
+
+
+git branch -D newBranch
+
+---
+end of file

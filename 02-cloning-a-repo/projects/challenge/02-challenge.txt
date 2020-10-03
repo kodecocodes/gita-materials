@@ -1,0 +1,44 @@
+Chapter 2 - Challenge Solution
+
+The goal of this challenge is twofold:
+
+a. Create a fork of the ideas repository under your own user account on GitHub.
+b. Clone the forked repository to your local system.
+
+This involves a few steps:
+
+1. Fork the **ideas** repository under your own personal user account.
+2. Find the clone URL of your new, forked repository.
+3. Clone the forked **ideas** repository to your local system.
+4. Verify that the local clone created successfully.
+5. Bonus: Prove that you’ve cloned the fork of your repo, and not the original repository.
+
+Here are the steps to follow to complete this challenge:
+
+Forking the repository:
+
+- Log in to GitHub with your personal account.
+- Go to the ideas repository at https://www.github.com/raywenderlich/ideas.
+- Click the "Fork" button on the repository homepage.
+- Wait while GitHub creates a fork of the repository.
+- When the fork has been created, you’ll be taken to the new repository homepage.
+
+Cloning the fork:
+
+- Click the "Clone or download" button, and get the HTTPS URL to clone the repository.
+- Go to your command prompt, and navigate to the main MasteringGit directory if you’re not already there.
+- run "git clone https://www.github.com/<your-username>/ideas.git"
+
+Verify the clone created successfully:
+
+- Navigate into the newly created "ideas" directory with "cd ideas".
+- Use "ls" to see that the file structure you expect is there.
+
+Bonus: Prove you’ve cloned the fork, and not the original
+
+- This one may take a bit of Googling. The git command "git remote" will help you out here.
+- While inside the "ideas" directory, execute the command "git remote -v".
+- This will show you the origin of your local clone: https://www.github.com/<your-username>/ideas.
+
+---
+end of file 
