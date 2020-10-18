@@ -1,0 +1,60 @@
+Chapter 3 - Challenge Solution
+
+This challenge simply reuses the commands you’ve used in this chapter to accomplish the following tasks:
+
+1. Create a new file named **tutorials_ideas.md** inside the **tutorials** directory.
+2. Add a heading to the file: `# Tutorial Ideas`
+3. Populate the file with a few ideas, following the format of the other files, for example, `[ ] Mastering PalmOS`.
+4. Save your changes.
+5. Add those changes to the staging area.
+6. Commit those staged changes with an appropriate message
+
+Here are the steps I followed to complete this challenge. You may have used slightly different methods to accomplish the same result, but here’s how I did it:
+
+- Create the new file with the command: touch tutorials/tutorial_ideas.md
+
+- Edit the files using nano, with the command: nano tutorials/tutorial_ideas.md
+
+- Added the following content to the file:
+
+# Tutorial Ideas
+
+Some tutorial ideas to help us branch out into new areas where no tutorial has gone before:
+
+[ ] Mastering PalmOS
+[ ] COBOL: Not just for Y2K anymore
+[ ] AppleTalk by Tutorials: Your road to the information superhighway
+
+- Saved my changes (in nano, Ctrl + O, Enter, Ctrl + X)
+
+- Staged my changes with "git add ."
+
+- Committed my changes with the command: git commit -m "Adding some tutorial ideas"
+
+- Bonus: To prove to myself that my changes made it there, checked log with the command: git log -p
+
+Which gave me the following output, which I’ve truncated to the important bits:
+
+commit 6c88142dc775c4289b764cb9cf2e644274072102 (HEAD -> master)
+Author: Chris Belanger <chris@razeware.com>
+Date:   Sat Jan 19 07:16:11 2019 -0400
+
+    Adding some tutorial ideas
+
+diff --git a/tutorials/tutorial_ideas.md b/tutorials/tutorial_ideas.md
+new file mode 100644
+index 0000000..a0bde40
+--- /dev/null
++++ b/tutorials/tutorial_ideas.md
+@@ -0,0 +1,7 @@
++# Tutorial Ideas
++
++Some tutorial ideas to help us branch out into new areas where no tutorial has gone before:
++
++[ ] Mastering PalmOS
++[ ] COBOL: Not just for Y2K anymore
++[ ] AppleTalk by Tutorials: Your road to the information superhighway
+
+---
+end of file
+

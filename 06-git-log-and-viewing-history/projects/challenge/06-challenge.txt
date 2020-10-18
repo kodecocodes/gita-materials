@@ -1,0 +1,59 @@
+Chapter 6 - Challenge Solution
+
+Challenge 1: Show all the details of commits that mark items as “done”
+
+For this challenge, you need to find all of the commits where items have been ticked off as “done”; that is, ones that have an “x” inside the brackets, like so:
+
+`[x]`
+
+You’ll need to search for the above string, and you’ll need to use an option to not only show the basic commit details, but also show the contents of the changeset of the commit.
+
+To do this, use the search flag "-S" with git log, and also include the "-p" flag to see the contents of each commit:
+
+
+git log -s"[x]" -p
+
+
+
+Challenge 2: Find all the commits with messages that mention “streaming”
+
+You want to search through the commit **messages** to find where you or someone else has used the term “streaming” in the commit message itself, not necessarily in the content of the commit. Tip: What was that strangely named command you learned about earlier in this chapter?
+
+Right, you want to use "--grep" to go through the commit messages, instead of "-S" to search the contents:
+
+
+git log --grep="streaming"
+
+
+
+Challenge 3: Get a detailed history of the videos directory
+
+For this challenge, you need to show everything that’s happened inside the **videos** directory, as far as Git’s concerned. But, once again, the basic information about the commit is not enough. You also need to show the full details about that diff. So you’ll tag a familiar option on to the end of the command... or can you?
+
+So you can pull up the list of changes that have happened with a basic filter to limit the history to just the contents of /videos:
+
+
+git log -- videos/
+
+
+But that's not quite what you want to do - this shows you the basic commit information. You want the detailed information of each commit.
+
+Your first instinct might be to put the "-p" flag on the end, but wait — you can't do that, since you've already used "--" in your command, and you can't use basic flags after "--".
+
+So instead, you need to put "-p" just after "git log":
+
+
+git log -p -- videos/
+
+
+
+Challenge 4: Find detailed information about all commits that contain “iOS 13”
+
+In this final challenge, you need to find the commits whose diffs contain the term “iOS 13.” This sounds similar to Challenge 1 above, but if you try to use the same command as you did in that challenge, you won’t find any results. But trust me, there is at least one result in there. Tip: Did you remember to search “all” of the repository?
+
+The secret here is that you need to look beyond any history in your current branch, and tell Git to also consider other branches. So you'll need the "--all" flag in there:
+
+git log -p --all -S"iOS 13"
+
+--
+end of file

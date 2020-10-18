@@ -1,0 +1,29 @@
+Chapter 4 - Challenge Solution
+
+This challenge simply reuses the commands you’ve used in this chapter to accomplish the following tasks:
+
+1. Move the newly added **books/management_book_ideas.md** to the **website** directory with `git mv`.
+2. You’ve changed your mind and don’t want **management_book_ideas.md** anymore, so remove that file completely.
+3. But now you’re having second thoughts: maybe you _do_ have some good ideas about management. Restore that file to its original location in the **books** directory.
+
+Again, it’s worth your while to execute "git status" after each change, to see exactly what Git is going at each step. It’s a great way to get your bearings in your early days with Git.
+
+Here are the steps I followed to complete this challenge. You may have used slightly different methods to accomplish the same result, but here’s how I did it:
+
+- Move the file with "git mv books/management_book_ideas.md website/"
+
+- Next, if you try to do "git rm website/management_book_ideas.md" to delete the file, Git will give you an error:
+
+error: the following file has changes staged in the index:
+    website/management_book_ideas.md
+(use --cached to keep the file, or -f to force removal)
+
+- So simply add the "-f" option to the end of that command to force removal, and try it again: "git rm website/management_book_ideas.md -f". Git will replace the staged change of renaming the file, with the new change of deleting the file.
+
+- To undo that staged change, simply revert your staged changes with "git reset HEAD books/management_book_ideas.md".
+
+- Then, to restore the file, execute "git checkout HEAD books/management_book_ideas.md" to get the original version of that file back from the repository.
+
+---
+end of file
+
