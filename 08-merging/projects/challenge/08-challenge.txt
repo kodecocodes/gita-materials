@@ -1,4 +1,4 @@
-Chapter 10 - Challenge Solution
+Chapter 8 - Challenge Solution
 
 This challenge asks you to create a branch, make some modifications on that branch, and force Git to not perform a fast-forward merge. The high-level steps for this task are:
 
@@ -18,7 +18,7 @@ This challenge asks you to create a branch, make some modifications on that bran
 Here are the steps I followed to complete this challenge. You may have used slightly different methods to accomplish the same result, but here’s how I did it:
 
 - git checkout master
-- git branch -b contact-details
+- git checkout -b contact-details
 - There’s no need to explicitly switch to that branch; git branch -b does this for you
 - I edited README.md in nano and saved my changes.
 - git add README.md
@@ -38,12 +38,12 @@ Here are the steps I followed to complete this challenge. You may have used slig
 - git log --graph --oneline --all
 - This shows me the following:
 
-*   f5c54f0 (HEAD -> master) Merge branch 'contact-details'
+*   f5c54f0 (HEAD -> master) Merge branch 'contact-details' into master
 |\
 | * 75e1886 (contact-details) Adding README contact information
 |/
 * 78eefc6 (readme-updates) Adding more detail to the README file
-*   55fb2dc Merge branch 'clickbait'
+*   55fb2dc Merge branch 'clickbait' into master
 |\
 | * e69a76a (origin/clickbait, clickbait) Adding suggestions from Mic
 
