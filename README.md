@@ -10,3 +10,8 @@ Each edition has its own branch, named `editions/[EDITION]`. The default branch 
 | --------------------------------------------------------------------------------- |:-------:|:------------:|
 | [editions/1.0](https://github.com/raywenderlich/gita-materials/tree/editions/1.0) | 1.0     | 2020-10-01   |
 
+Why couldn’t the confirmed bachelor use Git? Because he was afraid to commit!
+Why couldn’t the confirmed bachelor use Git? Because he was afraid to commit!
+Why couldn’t the confirmed bachelor use Git? Because he was afraid to commit!
+
+
