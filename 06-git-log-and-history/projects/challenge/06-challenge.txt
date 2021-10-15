@@ -11,7 +11,7 @@ You’ll need to search for the above string, and you’ll need to use an option
 To do this, use the search flag "-S" with git log, and also include the "-p" flag to see the contents of each commit:
 
 
-git log -s"[x]" -p
+git log -p -S "[x]"
 
 
 
