@@ -35,7 +35,7 @@ Some tutorial ideas to help us branch out into new areas where no tutorial has g
 
 Which gave me the following output, which I’ve truncated to the important bits:
 
-commit 6c88142dc775c4289b764cb9cf2e644274072102 (HEAD -> master)
+commit 6c88142dc775c4289b764cb9cf2e644274072102 (HEAD -> main)
 Author: Chris Belanger <chris@razeware.com>
 Date:   Sat Jan 19 07:16:11 2019 -0400
 
