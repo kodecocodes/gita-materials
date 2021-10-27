@@ -10,7 +10,7 @@ This challenge asks you to create a branch, make some modifications on that bran
 6. Stage your changes.
 7. Commit your changes with an appropriate commit message, such as "Adding README contact information".
 8. Switch back to the `main` branch.
-9. Pull up the graph of the repository, and don’t forget to use the `--all` option to see history of all branches. Make note of how `master` and `contact-details` look on this graph.
+9. Pull up the graph of the repository, and don’t forget to use the `--all` option to see history of all branches. Make note of how `main` and `contact-details` look on this graph.
 10. Merge in the changes from `contact-details`, using the `--no-ff` option.
 11. Enter something appropriate in the merge message in Vim when prompted. Use the cheatsheet above to help you navigate through Vim if necessary.
 12. Pull up the graph of the repository again. How can you tell that this is a merge commit, and not a fast-forward commit?
