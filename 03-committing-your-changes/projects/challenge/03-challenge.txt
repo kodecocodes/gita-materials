@@ -35,15 +35,15 @@ Some tutorial ideas to help us branch out into new areas where no tutorial has g
 
 Which gave me the following output, which I’ve truncated to the important bits:
 
-commit 6c88142dc775c4289b764cb9cf2e644274072102 (HEAD -> main)
-Author: Chris Belanger <chris@razeware.com>
-Date:   Sat Jan 19 07:16:11 2019 -0400
+commit b5336044f8fdc9c086f2973e8696ab2103d388b5 (HEAD -> main)
+Author: Bhagat Singh <bhagatsingh2297@gmail.com>
+Date:   Tue Oct 26 09:10:42 2021 +0530
 
     Adding some tutorial ideas
 
 diff --git a/tutorials/tutorial_ideas.md b/tutorials/tutorial_ideas.md
 new file mode 100644
-index 0000000..a0bde40
+index 0000000..cb8b346
 --- /dev/null
 +++ b/tutorials/tutorial_ideas.md
 @@ -0,0 +1,7 @@
@@ -57,4 +57,3 @@ index 0000000..a0bde40
 
 ---
 end of file
-
