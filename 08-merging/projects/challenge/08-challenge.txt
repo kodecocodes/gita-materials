@@ -2,33 +2,33 @@ Chapter 10 - Challenge Solution
 
 This challenge asks you to create a branch, make some modifications on that branch, and force Git to not perform a fast-forward merge. The high-level steps for this task are:
 
-1. Ensure you’re on the `master` branch.
+1. Ensure you’re on the `main` branch.
 2. Create a branch named `contact-details`.
 3. Switch to that branch.
 4. Edit the README.md file and add the following text to the end of the file: "Contact: support@razeware.com".
 5. Save your edits to the file.
 6. Stage your changes.
 7. Commit your changes with an appropriate commit message, such as "Adding README contact information".
-8. Switch back to the `master` branch.
-9. Pull up the graph of the repository, and don’t forget to use the `--all` option to see history of all branches. Make note of how `master` and `contact-details` look on this graph.
+8. Switch back to the `main` branch.
+9. Pull up the graph of the repository, and don’t forget to use the `--all` option to see history of all branches. Make note of how `main` and `contact-details` look on this graph.
 10. Merge in the changes from `contact-details`, using the `--no-ff` option.
 11. Enter something appropriate in the merge message in Vim when prompted. Use the cheatsheet above to help you navigate through Vim if necessary.
 12. Pull up the graph of the repository again. How can you tell that this is a merge commit, and not a fast-forward commit?
 
 Here are the steps I followed to complete this challenge. You may have used slightly different methods to accomplish the same result, but here’s how I did it:
 
-- git checkout master
-- git branch -b contact-details
-- There’s no need to explicitly switch to that branch; git branch -b does this for you
+- git checkout main
+- git checkout -b contact-details
+- There’s no need to explicitly switch to that branch; git checkout -b does this for you
 - I edited README.md in nano and saved my changes.
 - git add README.md
 - git commit -m "Adding README contact information"
-- git checkout master
+- git checkout main
 - git log --graph --oneline --all
 - This shows me the following:
 
 * 75e1886 (contact-details) Adding README contact information
-* 78eefc6 (HEAD -> master, readme-updates) Adding more detail to the README file
+* 78eefc6 (HEAD -> main, readme-updates) Adding more detail to the README file
 *   55fb2dc Merge branch 'clickbait'
 |\
 | * e69a76a (origin/clickbait, clickbait) Adding suggestions from Mic
@@ -38,7 +38,7 @@ Here are the steps I followed to complete this challenge. You may have used slig
 - git log --graph --oneline --all
 - This shows me the following:
 
-*   f5c54f0 (HEAD -> master) Merge branch 'contact-details'
+*   f5c54f0 (HEAD -> main) Merge branch 'contact-details'
 |\
 | * 75e1886 (contact-details) Adding README contact information
 |/
@@ -51,7 +51,7 @@ You can tell this is a merge commit, since Git created a new commit (f5c54f0) to
 
 Had you chosen to *not* create a merge commit, and instead do a fast-forward commit, your repository graph would have looked like the following:
 
-* 75e1886 (HEAD -> master, contact-details) Adding README contact information
+* 75e1886 (HEAD -> main, contact-details) Adding README contact information
 * 78eefc6 (readme-updates) Adding more detail to the README file
 *   55fb2dc Merge branch 'clickbait'
 |\
