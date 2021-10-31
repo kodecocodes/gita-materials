@@ -31,10 +31,10 @@ git add README.md
 git commit -m "Adding README.md"
 
 
-6. Checkout the **master** branch.
+6. Checkout the **main** branch.
 
 
-git checkout master
+git checkout main
 
 
 7. Delete **newBranch** — but Git won’t let you delete this branch in its current state. Why?
