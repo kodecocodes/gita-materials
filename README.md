@@ -14,3 +14,5 @@ We’ve set up an official forum for the book at [https://forums.raywenderlich.c
 | --------------------------------------------------------------------------------- |:-------:|:------------:|
 | [editions/1.0](https://github.com/raywenderlich/gita-materials/tree/editions/1.0) | 1.0     | 2020-10-01   |
 | [editions/2.0](https://github.com/raywenderlich/gita-materials/tree/editions/2.0) | 2.0     | 2021-11-17   |
+
+Why couldn’t the confirmed bachelor use Git? Because he was afraid to commit!
