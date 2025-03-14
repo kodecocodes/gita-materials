@@ -18,7 +18,7 @@ Here are the steps to follow to complete this challenge:
 Forking the repository:
 
 - Log in to GitHub with your personal account.
-- Go to the ideas repository at https://www.github.com/raywenderlich/ideas.
+- Go to the ideas repository at https://www.github.com/kodecocodes/ideas.
 - Click the "Fork" button on the repository homepage.
 - Wait while GitHub creates a fork of the repository.
 - When the fork has been created, you’ll be taken to the new repository homepage.
