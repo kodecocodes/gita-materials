@@ -20,6 +20,7 @@ Forking the repository:
 - Log in to GitHub with your personal account.
 - Go to the ideas repository at https://www.github.com/kodecocodes/ideas.
 - Click the "Fork" button on the repository homepage.
+- Uncheck the option to copy only the main branch only.
 - Wait while GitHub creates a fork of the repository.
 - When the fork has been created, you’ll be taken to the new repository homepage.
 
